@@ -1,0 +1,5 @@
+cryptography
+pyngrok
+colorama
+requests
+json
