@@ -2,9 +2,7 @@ import os
 import time
 #Install Requirements
 os.system("cls")
-print(Fore.GREEN+"\n Checking Libraries...")
 time.sleep(0.3)
-print(Fore.WHITE+"")
 os.system("pip install --upgrade pip")
 os.system("pip install -r requirements.txt")
 #Finish Install Requirements
