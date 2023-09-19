@@ -1,13 +1,5 @@
-import sys
-from colorama import Fore
-import ToJa
-import banner
-from cryptography.fernet import Fernet
 import os
 import time
-
-key2= Fernet.generate_key()
-
 #Install Requirements
 os.system("cls")
 print(Fore.GREEN+"\n Checking Libraries...")
@@ -16,6 +8,13 @@ print(Fore.WHITE+"")
 os.system("pip install --upgrade pip")
 os.system("pip install -r requirements.txt")
 #Finish Install Requirements
+import sys
+from colorama import Fore
+import ToJa
+import banner
+from cryptography.fernet import Fernet
+
+key2= Fernet.generate_key()
 
 banner.banner()
 banner.infolist1()
