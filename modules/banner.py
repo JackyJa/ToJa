@@ -9,7 +9,7 @@ def banner():
     print(Fore.BLUE+"\n▄▄▄█████▓ ▒█████   ▄▄▄██▀▀▀▄▄▄      ")
     print(Fore.BLUE+"▓  ██▒ ▓▒▒██▒  ██▒   ▒██  ▒████▄    ")
     print(Fore.BLUE+"▒ ▓██░ ▒░▒██░  ██▒   ░██  ▒██  ▀█▄  ")
-    print(Fore.BLUE+"░ ▓██▓ ░ ▒██   ██░▓██▄██▓ ░██▄▄▄▄██                               "+Fore.YELLOW+"Version : 1.0")
+    print(Fore.BLUE+"░ ▓██▓ ░ ▒██   ██░▓██▄██▓ ░██▄▄▄▄██                               "+Fore.YELLOW+"Version : 2.0")
     print(Fore.BLUE+"  ▒██▒ ░ ░ ████▓▒░ ▓███▒   ▓█   ▓██▒                              "+Fore.YELLOW+"Creator : Jacky")
     print(Fore.RED+"  ▒ ░░   ░ ▒░▒░▒░  ▒░▒▒░   ▒▒   ░▒░░                              "+Fore.YELLOW+"Id In Telegram : @Jacky_hard")
     print(Fore.RED+"    ░      ░ ▒ ▒░  ▒ ░▒░    ▒   ▒▒ ░")
