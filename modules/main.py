@@ -20,7 +20,11 @@ os.system("pip install -r requirements.txt")
 banner.banner()
 banner.infolist1()
 
-sel = input(Fore.LIGHTWHITE_EX+"--> ")
+try:
+    sel = input(Fore.LIGHTWHITE_EX+"--> ")
+except KeyboardInterrupt:
+    print("")
+    sys.exit()
 if int(sel) == 1:
     ToJa.soc1()
 elif int(sel) == 2:
