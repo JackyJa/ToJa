@@ -3,6 +3,7 @@ import time
 import banner
 from colorama import Fore
 def create():
+    banner.banner()
     print(Fore.RED+"""\n [!] Welcome To The Ransomware Maker Part\n
  [!] Please Enter The Telegram bot Token && Your User ID\n""")
     try:

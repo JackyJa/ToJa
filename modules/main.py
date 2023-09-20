@@ -4,7 +4,7 @@ import time
 os.system("cls")
 time.sleep(0.3)
 os.system("pip install --upgrade pip")
-lib = ["cryptography","pyngrok","colorama","requests","json","win10toast","ctypes","getpass"]
+lib = ["cryptography","pyngrok","colorama","requests","json","win10toast","ctypes","getpass","smtplib"]
 for i in lib:
     os.system(f"pip install {i}")
 #Finish Install Requirements
