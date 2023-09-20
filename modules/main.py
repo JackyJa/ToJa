@@ -35,6 +35,6 @@ elif int(sel) == 3:
     time.sleep(1)
     ToJa.soc3()
 elif int(sel) == 4:
-    print(Fore.RED+" Creator : Jacky\n"+Fore.YELLOW+" ID Telegram : @Jacky_hard\n"+Fore.GREEN+" Version : 2.0\n"+Fore.LIGHTBLUE_EX+" Please Support Us :)")
+    print(Fore.RED+" Creator : Jacky\n"+Fore.YELLOW+" ID Telegram : @Jacky_hard\n"+Fore.GREEN+" Version : 2.0\n"+Fore.LIGHTCYAN_EX+" Channel In Telegram : @toja_github\n"+Fore.LIGHTBLUE_EX+" Please Support Us :)")
 else:
     sys.exit()

@@ -12,7 +12,7 @@ def banner():
     print(Fore.BLUE+"░ ▓██▓ ░ ▒██   ██░▓██▄██▓ ░██▄▄▄▄██                               "+Fore.YELLOW+"Version : 2.0")
     print(Fore.BLUE+"  ▒██▒ ░ ░ ████▓▒░ ▓███▒   ▓█   ▓██▒                              "+Fore.YELLOW+"Creator : Jacky")
     print(Fore.RED+"  ▒ ░░   ░ ▒░▒░▒░  ▒░▒▒░   ▒▒   ░▒░░                              "+Fore.YELLOW+"Id In Telegram : @Jacky_hard")
-    print(Fore.RED+"    ░      ░ ▒ ▒░  ▒ ░▒░    ▒   ▒▒ ░")
+    print(Fore.RED+"    ░      ░ ▒ ▒░  ▒ ░▒░    ▒   ▒▒ ░                              "+Fore.YELLOW+"Channel In Telegram : @toja_github")
     print(Fore.RED+"  ░      ░ ░ ░ ▒   ░ ░ ░    ░   ▒   ")
     print(Fore.RED+"             ░ ░   ░   ░        ░  ░")
 def infolist1():
