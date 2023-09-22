@@ -32,6 +32,6 @@ elif int(sel) == 2:
 elif int(sel) == 3:
     path.create()
 elif int(sel) == 4:
-    print(Fore.RED+" Creator : Jacky\n"+Fore.YELLOW+" ID Telegram : @Jacky_hard\n"+Fore.GREEN+" Version : 2.0\n"+Fore.LIGHTCYAN_EX+" Channel In Telegram : @toja_github\n"+Fore.LIGHTBLUE_EX+" Please Support Us :)")
+    print(Fore.RED+" Creator : Jacky\n"+Fore.YELLOW+" ID Telegram : @Jacky_hard\n"+Fore.GREEN+" Version : 3.0\n"+Fore.LIGHTCYAN_EX+" Channel In Telegram : @toja_github\n"+Fore.LIGHTBLUE_EX+" Please Support Us :)")
 else:
     sys.exit()
