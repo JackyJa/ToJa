@@ -69,7 +69,3 @@ def soc():
 
     while True:
         user()
-
-def soc3():
-    os.system("pyinstaller --onefile encrypt.py")
-    print(Fore.RED+"\n [!] Your Exe File Is Building!Go To /dist Folder")

