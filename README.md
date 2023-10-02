@@ -5,7 +5,8 @@ If You Have Question Go To My Telegram's Id(My Id In Tool , You Can See When You
 
 
 
-![Command Prompt - python  main py 9_22_2023 6_02_50 PM](https://github.com/JackyJa/ToJa/assets/145385026/92afdfd5-f964-44ce-883a-b6f55a244955)
+![Command Prompt - python  main py 10_2_2023 7_45_21 PM](https://github.com/JackyJa/ToJa/assets/145385026/d3d9bfb9-eb22-4305-a9cc-4483dad62967)
+
 
 
 
