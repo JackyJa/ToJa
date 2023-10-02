@@ -9,12 +9,13 @@ def banner():
     print(Fore.BLUE+"\n▄▄▄█████▓ ▒█████   ▄▄▄██▀▀▀▄▄▄      ")
     print(Fore.BLUE+"▓  ██▒ ▓▒▒██▒  ██▒   ▒██  ▒████▄    ")
     print(Fore.BLUE+"▒ ▓██░ ▒░▒██░  ██▒   ░██  ▒██  ▀█▄  ")
-    print(Fore.BLUE+"░ ▓██▓ ░ ▒██   ██░▓██▄██▓ ░██▄▄▄▄██                               "+Fore.YELLOW+"Version : 3.0")
+    print(Fore.BLUE+"░ ▓██▓ ░ ▒██   ██░▓██▄██▓ ░██▄▄▄▄██                               "+Fore.YELLOW+"Version : 4.0")
     print(Fore.BLUE+"  ▒██▒ ░ ░ ████▓▒░ ▓███▒   ▓█   ▓██▒                              "+Fore.YELLOW+"Creator : Jacky")
     print(Fore.RED+"  ▒ ░░   ░ ▒░▒░▒░  ▒░▒▒░   ▒▒   ░▒░░                              "+Fore.YELLOW+"Id In Telegram : @Jacky_hard")
     print(Fore.RED+"    ░      ░ ▒ ▒░  ▒ ░▒░    ▒   ▒▒ ░                              "+Fore.YELLOW+"Channel In Telegram : @toja_github")
     print(Fore.RED+"  ░      ░ ░ ░ ▒   ░ ░ ░    ░   ▒   ")
     print(Fore.RED+"             ░ ░   ░   ░        ░  ░")
+    
 def infolist1():
     time.sleep(1)
     print("\n"+Fore.RED+"  ["+Fore.WHITE+"*"+Fore.RED+"]"+Fore.CYAN+" Please Select One \n")
@@ -33,4 +34,17 @@ def infolist1():
     time.sleep(0.1)
     print(Fore.GREEN+"\n [*] Exit (Press Enter...) \n")  
 
-
+def infolist2():
+    time.sleep(1)
+    print("\n"+Fore.RED+"  ["+Fore.WHITE+"*"+Fore.RED+"]"+Fore.CYAN+" Please Select One \n")
+    time.sleep(0.1)
+    print(Fore.GREEN+"  [1]"+Fore.RED+" Tools For Hacking")    
+    print(Fore.CYAN+"  **********************") 
+    time.sleep(0.2)
+    print(Fore.GREEN+"  [2]"+Fore.BLUE+" SMS Bomber")  
+    print(Fore.CYAN+"  **********************")
+    time.sleep(0.1)
+    print(Fore.GREEN+"  [3]"+Fore.YELLOW+" About Us")   
+    print(Fore.CYAN+"  **********************")
+    time.sleep(0.1)
+    print(Fore.GREEN+"\n [*] Exit (Press Enter...) \n")  
