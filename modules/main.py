@@ -50,7 +50,7 @@ if int(sel2) == 1:
 
 elif int(sel2) == 2:
     banner.banner()
-    num = input("\n"+Fore.GREEN+" Please Enter Your Phone Number Like [0999*******] : ")
+    num = input("\n"+Fore.LIGHTBLUE_EX+" Please Enter Your Phone Number Like [0999*******] : ")
     co = input("\n"+Fore.RED+" Please Enter The Count of Round of Bombing : ")
     Bomber.bomb.bombing(phone=num,count=int(co))
     print("\n"+Fore.LIGHTMAGENTA_EX+" FINISH! ")
@@ -59,6 +59,6 @@ elif int(sel2) == 2:
 
 
 elif int(sel2) == 3:
-    print(Fore.RED+"\n Creator : Jacky\n"+Fore.YELLOW+" ID Telegram : @Jacky_hard\n"+Fore.GREEN+" Version : 4.0\n"+Fore.LIGHTCYAN_EX+" Channel In Telegram : @toja_github\n"+Fore.LIGHTBLUE_EX+" Please Support Us :)")
+    print(Fore.RED+"\n Creator : Jacky\n"+Fore.YELLOW+" ID Telegram : @Jacky_hard\n"+Fore.GREEN+" Version : 5.0\n"+Fore.LIGHTCYAN_EX+" Channel In Telegram : @toja_github\n"+Fore.LIGHTBLUE_EX+" Please Support Us :)")
 else:
     sys.exit()
