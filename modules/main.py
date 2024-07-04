@@ -1,14 +1,14 @@
 import os
 import time
 #Install Requirements
-
+'''
 os.system("cls")
 time.sleep(0.3)
 os.system("pip install --upgrade pip")
 lib = ["cryptography","pyngrok","colorama","requests","json","win10toast","ctypes","getpass","smtplib"]
 for i in lib:
     os.system(f"pip install {i}")
-#Finish Install Requirements
+#Finish Install Requirements'''
 
 import sys
 from colorama import Fore
@@ -17,6 +17,7 @@ import banner
 from cryptography.fernet import Fernet
 import path
 import Bomber.bomb
+import open_note
 
 key2= Fernet.generate_key()
 
@@ -44,7 +45,7 @@ if int(sel2) == 1:
     elif int(sel) == 3:
         path.create()
     elif int(sel) == 4:
-        print(Fore.RED+"\n Creator : Jacky\n"+Fore.YELLOW+" ID Telegram : @Jacky_hard\n"+Fore.GREEN+" Version : 4.0\n"+Fore.LIGHTCYAN_EX+" Channel In Telegram : @toja_github\n"+Fore.LIGHTBLUE_EX+" Please Support Us :)")
+        print(Fore.RED+"\n Creator : Jacky\n"+Fore.YELLOW+" ID Telegram : @Jacky_hard\n"+Fore.GREEN+" Version : 6.0\n"+Fore.LIGHTCYAN_EX+" Channel In Telegram : @toja_github\n"+Fore.LIGHTBLUE_EX+" Please Support Us :)")
     else:
         sys.exit()
 
@@ -59,6 +60,10 @@ elif int(sel2) == 2:
 
 
 elif int(sel2) == 3:
-    print(Fore.RED+"\n Creator : Jacky\n"+Fore.YELLOW+" ID Telegram : @Jacky_hard\n"+Fore.GREEN+" Version : 5.0\n"+Fore.LIGHTCYAN_EX+" Channel In Telegram : @toja_github\n"+Fore.LIGHTBLUE_EX+" Please Support Us :)")
+    open_note.create()
+
+
+elif int(sel2) == 4:
+    print(Fore.RED+"\n Creator : Jacky\n"+Fore.YELLOW+" ID Telegram : @Jacky_hard\n"+Fore.GREEN+" Version : 6.0\n"+Fore.LIGHTCYAN_EX+" Channel In Telegram : @toja_github\n"+Fore.LIGHTBLUE_EX+" Please Support Us :)")
 else:
     sys.exit()
